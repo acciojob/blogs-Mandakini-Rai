@@ -70,6 +70,7 @@ public class BlogService {
         image.setBlog(blog);
 
         List<Image> imageList = blog.getImageList();
+        if(imageList==null) imageList=new ArrayList<>();
         imageList.add(image);
 
         blog.setImageList(imageList);
