@@ -25,9 +25,7 @@ public class Blog {
 
     }
 
-    public Blog(int id ,String title,String content, Date date,List<Image> imageList){
-       this.id = id;
-       this.imageList = imageList;
+    public Blog(String title,String content, Date date){
         this.title = title;
         this.content = content;
         this.pubDate = date;

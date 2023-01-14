@@ -30,6 +30,7 @@ public class ImageService {
         imageList.add(image);
 
         blog.setImageList(imageList);
+        imageRepository2.save(image);
         blogRepository.save(blog);
 
         return image;
